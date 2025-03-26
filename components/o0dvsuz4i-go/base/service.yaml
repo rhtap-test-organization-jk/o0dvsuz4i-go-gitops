@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: o0dvsuz4i-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: o0dvsuz4i-go 
+  name: o0dvsuz4i-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: o0dvsuz4i-go 
